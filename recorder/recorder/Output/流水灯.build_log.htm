@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information:  ,  , LIC=KIVHL-08K56-JNVA8-3ST3B-EZBP8-66WF2
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.15.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DCM.DLL V1.13.2.0
+Target DLL:      CMSIS_AGDI.dll V1.21.12.0
+Dialog DLL:      TCM.DLL V1.14.5.0
+ 
+<h2>Project:</h2>
+E:\大三下\嵌入式及FPGA\大作业\recorder\recorder\Project\RVMDK（uv5）\iSO-STM32.uvprojx
+Project File Date:  05/08/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'uCOS_emWin'
+compiling Recorderapp.c...
+..\..\User\app\Recorderapp.c(69): warning:  #47-D: incompatible redefinition of macro "BUFSIZE" (declared at line 61)
+  #define BUFSIZE 2048
+..\..\User\app\Recorderapp.c(96): warning:  #177-D: variable "lrc" was declared but never referenced
+  static LYRIC lrc;
+..\..\User\app\Recorderapp.c(97): warning:  #177-D: variable "path" was declared but never referenced
+  static char path[100] = "1:"; //鎵?鎻?SD鍗?鐨?鍒?濮?鐩?褰?锛?鎵?鎻?鏄?閫?褰?鍑?鏁?锛?閫?褰?瓒?娣?锛?姝?鏁?缁?鍙?鍊?涔?瑕?瓒?澶?(鐢?浜?RAM闄?鍒? 姝?澶?鍙?灏?鐐?)
+..\..\User\app\Recorderapp.c(98): warning:  #177-D: variable "file_num" was declared but never referenced
+  static uint8_t file_num = 0;  //瀛?鍌?鎵?鎻?鍒?鐨?MP3+WAV闊?棰?鏂?浠?鏁?閲?
+..\..\User\app\Recorderapp.c(99): warning:  #177-D: variable "playlist" was declared but never referenced
+  static unsigned char playlist[20][FILE_NAME_LEN];
+..\..\User\app\Recorderapp.c(100): warning:  #177-D: variable "lcdlist" was declared but never referenced
+  static unsigned char lcdlist[20][MUSIC_NAME_LEN];
+..\..\User\app\Recorderapp.c(101): warning:  #177-D: variable "timestr" was declared but never referenced
+  static uint8_t timestr[6] = {0};
+..\..\User\app\Recorderapp.c(102): warning:  #177-D: variable "playflag" was declared but never referenced
+  static uint8_t playflag = 0;
+..\..\User\app\Recorderapp.c(103): warning:  #177-D: variable "chgsch" was declared but never referenced
+  static uint8_t chgsch = 0;
+..\..\User\app\Recorderapp.c(106): warning:  #177-D: variable "buffer" was declared but never referenced
+  static uint8_t buffer[BUFSIZE]; // 鏂?浠?缂?鍐?鍖?
+..\..\User\app\Recorderapp.c(116): warning:  #177-D: variable "player_state" was declared but never referenced
+  static PLAYER_STATE player_state; //鎾?鏀?鍣?鐘?鎬?鏍?蹇?浣?锛?鎸?绀?鍒?姝?锛?姝?鍦?鎾?鏀?锛?鏆?鍋?绛?鐘?鎬?
+..\..\User\app\Recorderapp.c(117): warning:  #177-D: variable "play_index" was declared but never referenced
+  static uint8_t play_index = 0;          //瀛?鍌?姝?鍦?鎴?鍑?澶?鎾?鏀?鐨?姝?鏇?绱?寮?
+..\..\User\app\Recorderapp.c(119): warning:  #177-D: variable "hSchedule" was declared but never referenced
+  static WM_HWIN hSchedule;
+..\..\User\app\Recorderapp.c(120): warning:  #177-D: variable "PTime" was declared but never referenced
+  static WM_HWIN PTime, ATime, hlyric;
+..\..\User\app\Recorderapp.c(120): warning:  #177-D: variable "ATime" was declared but never referenced
+  static WM_HWIN PTime, ATime, hlyric;
+..\..\User\app\Recorderapp.c(120): warning:  #177-D: variable "hlyric" was declared but never referenced
+  static WM_HWIN PTime, ATime, hlyric;
+..\..\User\app\Recorderapp.c(121): warning:  #177-D: variable "hWinmusic" was declared but never referenced
+  static WM_HWIN hWinmusic;
+..\..\User\app\Recorderapp.c: 17 warnings, 0 errors
+linking...
+Program Size: Code=139272 RO-data=54608 RW-data=3476 ZI-data=60916  
+FromELF: creating hex file...
+"..\..\Output\流水灯.axf" - 0 Error(s), 17 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.3.0.pack
+                ARM::CMSIS:CORE:4.1.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.1.0
+
+<h2>Collection of Component include folders:</h2>
+  E:\大三下\嵌入式及FPGA\大作业\recorder\recorder\Project\RVMDK（uv5）\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.1.0
+</pre>
+</body>
+</html>
